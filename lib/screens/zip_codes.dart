@@ -77,7 +77,7 @@ class _ZipCodesState extends State<ZipCodes> {
   Future<void> fetchData() async {
     try {
       var response = await http.get(
-          Uri.parse("https://api.zippopotamasdas.us/es/${zipController.text}"));
+          Uri.parse("https://api.zippopotam.us/es/${zipController.text}"));
       debugPrint(response.body);
       result = zipCodeFromJson(response.body);
       error = "";
